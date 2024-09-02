@@ -7,6 +7,9 @@ import Footer from "./Components/Footer";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
+import Contact from "./Components/Contact";
+import { Breadcrumbs } from "@material-tailwind/react";
+
 function App() {
   const baskervvilleStyle = {
     fontFamily: '"Baskervville SC", system-ui',
@@ -41,7 +44,18 @@ function App() {
                 className="justify-center flex mt-3"
                 style={baskervvilleStyle}
               >
-                React Developer in Kochi
+               <Breadcrumbs>
+  <a href="#" className="opacity-60 cursor-default hover:text-black">
+    MERN developer
+  </a>
+  <div className="opacity-60  cursor-default hover:text-black">
+    Cloud Enthusias
+  </div>
+  <a href="#" className="opacity-60  cursor-default hover:text-black  ">
+    learner
+  </a>
+</Breadcrumbs>
+
               </div>
               <div className="flex gap-9 justify-center flex">
                 <div>a</div>
@@ -116,7 +130,7 @@ function App() {
               <Home />
             ) : navigationSet.Projects === "true" ? (
               <Projects />
-            ) : navigationSet.Resume==="true"?(<Resume/>): (
+            ) : navigationSet.Resume==="true"?(<Resume/>):navigationSet.Contact==="true"?(<Contact/>):(
               ""
             )}
           </div>
