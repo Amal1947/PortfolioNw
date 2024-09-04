@@ -9,7 +9,10 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa6";
 import Contact from "./Components/Contact";
 import { Breadcrumbs } from "@material-tailwind/react";
-
+import { IoLogoLinkedin } from "react-icons/io5";
+import { SiGmail } from "react-icons/si";
+import { IoLogoWhatsapp } from "react-icons/io";
+// import { FaDiscord } from "react-icons/fa";
 function App() {
   const baskervvilleStyle = {
     fontFamily: '"Baskervville SC", system-ui',
@@ -57,11 +60,11 @@ function App() {
 </Breadcrumbs>
 
               </div>
-              <div className="flex gap-9 justify-center flex">
-                <div>a</div>
-                <div>a</div>
-                <div>a</div>
-                <div>a</div>
+              <div className="flex gap-5 justify-center flex mt-1">
+                <div><IoLogoLinkedin size={20}/></div>
+                <div><FaDiscord size={20} /></div>
+                <div><SiGmail size={20}/></div>
+                <div><IoLogoWhatsapp size={20}/></div>
               </div>
             </div>
             <div className="mt-5 flex w-40 h-40 text-white rounded-full bg-red-500 overflow-hidden">
