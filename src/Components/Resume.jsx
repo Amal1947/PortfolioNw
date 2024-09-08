@@ -3,11 +3,20 @@ import { MdSchool } from "react-icons/md";
 import { DiHtml5 } from "react-icons/di";
 import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io5";
+import { FaDownload } from "react-icons/fa";
+import resume from "../assets/AmalResumeOG.pdf"
 function Resume() {
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = resume; // Path to your resume file
+    link.download = 'resume.pdf'; // Desired filename
+    link.click(); // Programmatically trigger the download
+  };
   return (
     <div>
-        <div className='flex'>
-<b className=' text-2xl'>ABOUT ME</b>  
+        <div className='flex w-full'>
+ <div><b className=' text-2xl justify-start flex-1 flex '>ABOUT ME</b>  </div> 
+ <div className='justify-end flex flex-1 '><FaDownload style={{cursor:"pointer"}} onClick={downloadResume} className='mt-2 text-lg'/></div>
 
 
         </div>
