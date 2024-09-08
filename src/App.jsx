@@ -11,6 +11,7 @@ import Contact from "./Components/Contact";
 import { Breadcrumbs } from "@material-tailwind/react";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
+import { motion } from "framer-motion";
 import { IoLogoWhatsapp } from "react-icons/io";
 // import { FaDiscord } from "react-icons/fa";.
 import amal from "./assets/mamal.jpg"
@@ -72,63 +73,99 @@ function App() {
               <img src={amal} alt="Amal K" className="w-full h-full object-cover" />
             </div>
           </div>
-          <div className="mt-3 p-2">
-            <ul className="flex gap-8 md:gap-10   ">
-              <li
-                onClick={() => {
-                  setNavigationSet((ref) => ({
-                    ...ref,
-                    Home: "true",
-                    Contact: "false",
-                    Projects: "false",
-                    Resume: "false",
-                  }));
-                }}
-              >
-                HOME
-              </li>
-              <li
-                onClick={() => {
-                  setNavigationSet((ref) => ({
-                    ...ref,
-                    Home: "false",
-                    Contact: "false",
-                    Projects: "true",
-                    Resume: "false",
-                  }));
-                }}
-              >
-                PROJECTS
-              </li>
-              <li
-                onClick={() => {
-                  setNavigationSet((ref) => ({
-                    ...ref,
-                    Home: "false",
-                    Contact: "false",
-                    Projects: "false",
-                    Resume: "true",
-                  }));
-                }}
-              >
-                RESUME
-              </li>
-              <li
-                onClick={() => {
-                  setNavigationSet((ref) => ({
-                    ...ref,
-                    Home: "false",
-                    Contact: "true",
-                    Projects: "false",
-                    Resume: "false",
-                  }));
-                }}
-              >
-                CONTACT
-              </li>
-              {/* <li>amla</li> */}
-            </ul>
-          </div>
+          <div className="mt-3 p-2  ">
+  <ul className="flex  md:gap-10">
+    <motion.button
+      whileTap={{ scale: 0.9 }} // Animation on button click
+      onClick={() => {
+        setNavigationSet((ref) => ({
+          ...ref,
+          Home: "true",
+          Contact: "false",
+          Projects: "false",
+          Resume: "false",
+        }));
+      }}
+      style={{
+        backgroundColor: navigationSet.Home == "true" ? "black" : "white",
+        color: navigationSet.Home == "true" ? "white" : "black",
+        borderRadius: "10%", // Make the button round
+        padding: "7px 12px", // Adjust padding if needed
+      }}
+      className="focus:outline-none" // Add styling if needed
+    >
+      HOME
+    </motion.button>
+
+    <motion.button
+  whileTap={{ scale: 0.9 }}
+  onClick={() => {
+    setNavigationSet((ref) => ({
+      ...ref,
+      Home: "false",
+      Contact: "false",
+      Projects: "true",
+      Resume: "false",
+    }));
+  }}
+  style={{
+    backgroundColor: navigationSet.Projects == "true" ? "black" : "white",
+    color: navigationSet.Projects == "true" ? "white" : "black",
+    borderRadius: "10%", // Make the button round
+    padding: "7px 12px", // Adjust padding if needed
+  }}
+  className="focus:outline-none"
+>
+  PROJECTS
+</motion.button>
+
+
+
+    <motion.button
+      whileTap={{ scale: 0.9 }}
+      onClick={() => {
+        setNavigationSet((ref) => ({
+          ...ref,
+          Home: "false",
+          Contact: "false",
+          Projects: "false",
+          Resume: "true",
+        }));
+      }}
+      className="focus:outline-none"
+      style={{
+        backgroundColor: navigationSet.Resume == "true" ? "black" : "white",
+        color: navigationSet.Resume == "true" ? "white" : "black",
+        borderRadius: "10%", // Make the button round
+        padding: "7px 12px", // Adjust padding if needed
+      }}
+    >
+      RESUME
+    </motion.button>
+
+    <motion.button
+      whileTap={{ scale: 0.9 }}
+      onClick={() => {
+        setNavigationSet((ref) => ({
+          ...ref,
+          Home: "false",
+          Contact: "true",
+          Projects: "false",
+          Resume: "false",
+        }));
+      }}
+      style={{
+        backgroundColor: navigationSet.Contact == "true" ? "black" : "white",
+        color: navigationSet.Contact == "true" ? "white" : "black",
+        borderRadius: "10%", // Make the button round
+        padding: "7px 12px", // Adjust padding if needed
+      }}
+      className="focus:outline-none"
+    >
+      CONTACT
+    </motion.button>
+  </ul>
+</div>
           <div className="mt-5 mb-5">
             {navigationSet.Home === "true" ? (
               <Home />

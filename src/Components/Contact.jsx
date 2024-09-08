@@ -16,7 +16,8 @@ function Contact() {
 
   const HandelSend = () => {
     setLoading(true);
-    axios.post("http://localhost:5000/api/contact", data).then((response) => {
+ 
+    axios.post("http://localhost:7000/send-email", data).then((response) => {
       console.log("response", response);
     });
   };
