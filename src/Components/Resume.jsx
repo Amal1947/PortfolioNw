@@ -5,6 +5,13 @@ import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaDownload } from "react-icons/fa";
 import resume from "../assets/AmalResumeOG.pdf"
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
+import { DiMongodb } from "react-icons/di";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 function Resume() {
   const downloadResume = () => {
     const link = document.createElement('a');
@@ -86,24 +93,24 @@ Higher Secondary, Computer Science
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><DiHtml5 size={25} color='red' style={{marginTop:"px"}}/> <span className='mt-'>HTML </span> </div>
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1  sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><IoLogoJavascript size={25} color='yellow' style={{marginTop:"px"}}/> <span className='mt-'>Javascript </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1  sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
+<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><FaReact size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>React </span> </div>
+<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><FaNodeJs size={25} color='green' style={{marginTop:"px"}}/> <span className='mt-'>node js </span> </div>
+<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><DiMongodb size={25} color='green' style={{marginTop:"px"}}/> <span className='mt-'>mongoDb </span> </div>
+<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><RiTailwindCssFill size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>tailwind </span> </div>
+{/* <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1  sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
 
 
 
 </div>
 <div className='flex w-full gap-2 mb-3 flex-wrap '>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><DiHtml5 size={25} color='red' style={{marginTop:"px"}}/> <span className='mt-'>HTML </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><IoLogoJavascript size={25} color='yellow' style={{marginTop:"px"}}/> <span className='mt-'>Javascript </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className=" flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className="  flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/8 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className="   flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
-<div className="    flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
+<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><FaBootstrap size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>boottstrp </span> </div>
+<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><FaGithub size={25} color='black' style={{marginTop:"px"}}/> <span className='mt-'>git </span> </div>
+<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><SiNextdotjs size={25} color='black' style={{marginTop:"px"}}/> <span className='mt-'>next js </span> </div>
+{/* <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
+{/* <div className=" flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
+{/* <div className="  flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/8 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
+{/* <div className="   flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
+{/* <div className="    flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
     
 
 
