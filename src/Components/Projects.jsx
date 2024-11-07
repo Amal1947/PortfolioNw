@@ -15,7 +15,7 @@ function Projects() {
 
   return (
     <div
-      className="flex items-center justify-center  w-full md:bg-white bg-gray-100"
+      className="flex items-center justify-center  w-full md:bg-white "
       style={baskervvilleStyle}
     >
       <Card className="w-80 md:w-96 md:shadow-lg rounded-lg bg-white">
