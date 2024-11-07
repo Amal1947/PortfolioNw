@@ -3,15 +3,17 @@ import { MdSchool } from "react-icons/md";
 import { DiHtml5 } from "react-icons/di";
 import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaDownload } from "react-icons/fa";
+// import { FaDownload } from "react-icons/fa";
 import resume from "../assets/AmalResumeOG.pdf"
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa6";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaBootstrap ,FaDownload} from 'react-icons/fa';
+
+// import { FaReact } from "react-icons/fa";
+// import { FaNodeJs } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaBootstrap } from "react-icons/fa";
+// import { FaBootstrap } from "react-icons/fa";  
 import { FaGithub } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
+import { SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
 function Resume() {
   const downloadResume = () => {
     const link = document.createElement('a');
@@ -85,11 +87,30 @@ Higher Secondary, Computer Science
 </a>
 </div>
 
+<div className='mb-3 '>
+<a href="#" class="block w-full  p-6 bg-gray-100 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+<div className='flex gap-2'>
+<div><MdSchool size={40}/></div>
+<div className='w-full'>
+<h5 class=" text-2xl font-bold tracking-tight text-gray-900 dark:text-white mt-1  ">TechMindz Inforpark </h5>
+MERN Stack
+
+
+</div>
+<div className='justify-end flex w-full text-lg'>
+ <b style={{fontFamily:"serif"}}>2023   </b> 
+</div>
+</div>
+
+{/* <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> */}
+</a>
+</div>
+
 <div className='text-2xl mb-2'>
     <b>Tech Skills</b>
 </div>
 
-<div className='flex w-full gap-2 mb-3 flex-wrap '>
+{/* <div className='flex w-full gap-2 mb-3 flex-wrap '>
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><DiHtml5 size={25} color='red' style={{marginTop:"px"}}/> <span className='mt-'>HTML </span> </div>
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1  sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div>
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><IoLogoJavascript size={25} color='yellow' style={{marginTop:"px"}}/> <span className='mt-'>Javascript </span> </div>
@@ -97,15 +118,63 @@ Higher Secondary, Computer Science
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><FaNodeJs size={25} color='green' style={{marginTop:"px"}}/> <span className='mt-'>node js </span> </div>
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><DiMongodb size={25} color='green' style={{marginTop:"px"}}/> <span className='mt-'>mongoDb </span> </div>
 <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><RiTailwindCssFill size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>tailwind </span> </div>
-{/* <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1  sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
 
 
 
-</div>
+</div> */}
+<div className="mb-6">
+          {/* <h3 className="text-2xl font-semibold mb-4">Technical Skills</h3> */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <FaHtml5 size={30} className="text-orange-500 " />
+              <span>HTML5</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <FaCss3Alt size={30} className="text-blue-500" />
+              <span>CSS3</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <FaJs size={30} className="text-yellow-400" />
+              <span>JavaScript</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <FaReact size={30} className="text-cyan-500" />
+              <span>React.js</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <FaNodeJs size={30} className="text-green-600" />
+              <span>Node.js</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <SiMongodb size={30} className="text-green-500" />
+              <span>MongoDB</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <SiNextdotjs size={30} className="text-gray-800" />
+              <span>Next.js</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <FaBootstrap size={30} className="text-purple-600" />
+              <span>Bootstrap</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <SiTailwindcss size={30} className="text-blue-400" />
+              <span>Tailwind CSS</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <SiRedux size={30} className="text-purple-700" />
+              <span>Redux</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-gray-200 rounded p-1">
+              <FaGit size={30} className="text-orange-600" />
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
 <div className='flex w-full gap-2 mb-3 flex-wrap '>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><FaBootstrap size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>boottstrp </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><FaGithub size={25} color='black' style={{marginTop:"px"}}/> <span className='mt-'>git </span> </div>
-<div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><SiNextdotjs size={25} color='black' style={{marginTop:"px"}}/> <span className='mt-'>next js </span> </div>
+{/* <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><FaBootstrap size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>boottstrp </span> </div> */}
+{/* <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><FaGithub size={25} color='black' style={{marginTop:"px"}}/> <span className='mt-'>git </span> </div> */}
+{/* <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 "><SiNextdotjs size={25} color='black' style={{marginTop:"px"}}/> <span className='mt-'>next js </span> </div> */}
 {/* <div className="flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
 {/* <div className=" flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
 {/* <div className="  flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/8 xl:w-1/8"><IoLogoCss3 size={25} color='blue' style={{marginTop:"px"}}/> <span className='mt-'>CSS </span> </div> */}
@@ -139,6 +208,14 @@ Higher Secondary, Computer Science
 <div className=" flex-1 flex bg-gray-300 rounded gap-1 p-1 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 justify-center"> <span className='mt-'>malayalam </span> </div>
 
 </div>
+
+<div className='text-2xl font-bold mb-4 '>
+  Achievement
+</div>
+<div className='text-xl  mb-2'>
+  Awarded <span className="font-semibold">Employee of the Month</span>
+</div>
+
 
 
     </div>

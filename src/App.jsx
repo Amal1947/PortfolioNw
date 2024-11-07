@@ -54,10 +54,10 @@ function App() {
     MERN developer
   </a>
   <div className="opacity-60  cursor-default hover:text-black">
-    Cloud Enthusias
+  Tech Enthusiast
   </div>
   <a href="#" className="opacity-60  cursor-default hover:text-black  ">
-    learner
+    Learner
   </a>
 </Breadcrumbs>
 
@@ -180,10 +180,22 @@ function App() {
           <div className="flex  w-full mb-2">
        <div className="w-full "><b>aml</b></div> 
        <div className="justify-end gap-3 flex w-full">
-       <div className="mt-1"><FaGithub/></div>
-       <div className="mt-1"><FaLinkedin/></div>
+       <div className="mt-1">
+  <a href="https://github.com/shahnap" target="_blank" rel="noopener noreferrer">
+    <FaGithub />
+  </a>
+</div>
+<div className="mt-1">
+  <a href="https://www.linkedin.com/in/shahna-p-aba5a9288" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin />
+  </a>
+</div>
+<div className="mt-1">
+  <a href="https://discord.com/users/shahnaumer" target="_blank" rel="noopener noreferrer">
+    <FaDiscord />
+  </a>
+</div>
 
-       <div className="mt-1"><FaDiscord/></div>
 
        </div>
        
