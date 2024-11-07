@@ -5,6 +5,7 @@ import { Button } from "@material-tailwind/react";
 
 import { Breadcrumbs } from "@material-tailwind/react";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -14,17 +15,32 @@ function Contact() {
     message: "",
   });
 
+  
   const HandelSend = () => {
     setLoading(true);
- return
+  
     axios.post("http://localhost:7000/send-email", data).then((response) => {
       console.log("response", response);
+  
+      if (response.data == "Email sent successfully") {
+        setLoading(false);
+  
+        const userName = data.name; // Store name before clearing data
+  
+        // Clear the form data here
+        setData({
+          name: "",
+          email: "",
+          message: "",
+        });
+  
+        toast.success(`Thank You for the mail ${userName}. I will Reach you Out soon`);
+      }
     });
   };
+  
 
-  setTimeout(() => {
-    setLoading(false);
-  }, 2000);
+
 
   return (
     <div>
