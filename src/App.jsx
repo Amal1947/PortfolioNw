@@ -63,10 +63,23 @@ function App() {
 
               </div>
               <div className="flex gap-5 justify-center flex mt-1">
-                <div><IoLogoLinkedin size={20}/></div>
-                <div><FaDiscord size={20} /></div>
-                <div><SiGmail size={20}/></div>
-                <div><IoLogoWhatsapp size={20}/></div>
+                <div> <a 
+        href="https://www.linkedin.com/in/your-profile" // Replace with your LinkedIn profile link
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <IoLogoLinkedin size={20} />
+      </a></div>
+             
+                <div><a  href="https://mail.google.com/mail/?view=cm&fs=1&to=amalofficial999@gmail.com"target="_blank"><SiGmail size={20} /></a></div>
+             <div> <a 
+        href="   https://wa.me/qr/TV7XDRZM2SIYO1 " // Replace with your LinkedIn profile link
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <IoLogoWhatsapp size={20} />
+      </a></div>
+                {/* <div><IoLogoWhatsapp size={20}/></div> */}
               </div>
             </div>
             <div className="mt-5 flex w-40 h-40 text-white rounded-full bg-red-500 overflow-hidden">
@@ -181,20 +194,20 @@ function App() {
        <div className="w-full "><b>aml</b></div> 
        <div className="justify-end gap-3 flex w-full">
        <div className="mt-1">
-  <a href="https://github.com/shahnap" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/Amal1947" target="_blank" rel="noopener noreferrer">
     <FaGithub />
   </a>
 </div>
 <div className="mt-1">
-  <a href="https://www.linkedin.com/in/shahna-p-aba5a9288" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/shahna-p-aba5a92858" target="_blank" rel="noopener noreferrer">
     <FaLinkedin />
   </a>
 </div>
-<div className="mt-1">
+{/* <div className="mt-1">
   <a href="https://discord.com/users/shahnaumer" target="_blank" rel="noopener noreferrer">
     <FaDiscord />
   </a>
-</div>
+</div> */}
 
 
        </div>
