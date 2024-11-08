@@ -15,32 +15,30 @@ function Contact() {
     message: "",
   });
 
-  
   const HandelSend = () => {
     setLoading(true);
-  
+
     axios.post("http://localhost:7000/send-email", data).then((response) => {
       console.log("response", response);
-  
+
       if (response.data == "Email sent successfully") {
         setLoading(false);
-  
+
         const userName = data.name; // Store name before clearing data
-  
+
         // Clear the form data here
         setData({
           name: "",
           email: "",
           message: "",
         });
-  
-        toast.success(`Thank You for the mail ${userName}. I will Reach you Out soon`);
+
+        toast.success(
+          `Thank You for the mail ${userName}. I will Reach you Out soon`
+        );
       }
     });
   };
-  
-
-
 
   return (
     <div>
@@ -103,17 +101,25 @@ function Contact() {
         <b>Reach out to some of my most active platforms.</b>
       </div>
       <Breadcrumbs>
-      <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=amalofficial999@gmail.com"target="_blank"> <Button variant="outlined" className="flex items-center gap-3">
-          gmail
-        </Button></a>
-        <a 
-        href="   https://wa.me/qr/TV7XDRZM2SIYO1 " // Replace with your LinkedIn profile link
-        target="_blank"
-        rel="noopener noreferrer"
-      ><Button variant="outlined" className="flex items-center gap-3">
-      whats app
-    </Button></a>
-        
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=amalofficial999@gmail.com"
+          target="_blank"
+        >
+          {" "}
+          <Button variant="outlined" className="flex items-center gap-3">
+            gmail
+          </Button>
+        </a>
+        <a
+          href="   https://wa.me/qr/TV7XDRZM2SIYO1 " // Replace with your LinkedIn profile link
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="outlined" className="flex items-center gap-3">
+            whats app
+          </Button>
+        </a>
+
         <Button variant="outlined" className="flex items-center gap-3">
           linkdin
         </Button>
