@@ -72,11 +72,11 @@ function App() {
       </a></div>
              
                 <div><a  href="https://mail.google.com/mail/?view=cm&fs=1&to=amalofficial999@gmail.com"target="_blank"><SiGmail size={20} /></a></div>
-             <div> <a 
-        href="   https://wa.me/qr/TV7XDRZM2SIYO1 " // Replace with your LinkedIn profile link
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+              <div> <a 
+          href="   https://wa.me/qr/TV7XDRZM2SIYO1 " // Replace with your LinkedIn profile link
+          target="_blank"
+          rel="noopener noreferrer"
+        >
         <IoLogoWhatsapp size={20} />
       </a></div>
                 {/* <div><IoLogoWhatsapp size={20}/></div> */}

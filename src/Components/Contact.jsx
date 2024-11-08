@@ -103,14 +103,19 @@ function Contact() {
         <b>Reach out to some of my most active platforms.</b>
       </div>
       <Breadcrumbs>
-        <Button variant="outlined" className="flex items-center gap-3">
+      <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=amalofficial999@gmail.com"target="_blank"> <Button variant="outlined" className="flex items-center gap-3">
           gmail
-        </Button>
+        </Button></a>
+        <a 
+        href="   https://wa.me/qr/TV7XDRZM2SIYO1 " // Replace with your LinkedIn profile link
+        target="_blank"
+        rel="noopener noreferrer"
+      ><Button variant="outlined" className="flex items-center gap-3">
+      whats app
+    </Button></a>
+        
         <Button variant="outlined" className="flex items-center gap-3">
-          whats app
-        </Button>
-        <Button variant="outlined" className="flex items-center gap-3">
-          discord
+          linkdin
         </Button>
       </Breadcrumbs>
     </div>
