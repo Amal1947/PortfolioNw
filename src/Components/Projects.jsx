@@ -11,6 +11,34 @@ import taskTrack from "../assets/tasktrackwebp.webp";
 import toDo from "../assets/toDo.png";
 import aml from "../assets/aml.jpg";
 function Projects() {
+  // const projects = [
+  //     {
+  //       id: "ASPK",
+  //       title: "ASPK - ERP FOR LIFE",
+  //       description:
+  //         "ASPK is a comprehensive ERP system designed to seamlessly integrate and optimize both personal and professional aspects of life. It offers tools for task management, financial planning, health tracking, learning development, and project execution—all in one unified platform.",
+  //       liveLink: "https://aspk-2o.netlify.app/",
+  //       repoLink: "https://github.com/shahnap/ASPK",
+  //     },
+  //     {
+  //       id: "Portfolio",
+  //       title: "Portfolio - A Showcase of My Work",
+  //       description:
+  //         "My portfolio is a testament to my skills and creativity as a developer. Built with React and modern technologies, it reflects my journey, expertise, and dedication to creating impactful digital experiences.",
+  //       liveLink: "https://portfolio-nw-lac.vercel.app/",
+  //       repoLink: "https://github.com/Amal1947/PortfolioNw",
+  //     },
+  //     {
+  //       id: "ToDo",
+  //       title: "To-Do Application Using useQuery",
+  //       description:
+  //         "This To-Do application utilizes React’s useQuery hook to manage and fetch data efficiently. It ensures seamless data synchronization with the backend, showcasing modern data-fetching techniques.",
+  //       liveLink: "https://to-do-use-query.vercel.app/",
+  //       repoLink: "https://github.com/Amal1947/toDoUseQuery",
+  //       image: toDo,
+  //     },
+  //   ];   
+  // for simplyfing the code we can use this array but now i am not using
   const baskervvilleStyle = {
     fontFamily: '"Baskervville SC", system-ui',
     fontWeight: 400,
