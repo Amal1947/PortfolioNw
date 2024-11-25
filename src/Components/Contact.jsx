@@ -111,7 +111,7 @@ function Contact() {
           </Button>
         </a>
         <a
-          href="   https://wa.me/qr/TV7XDRZM2SIYO1 " // Replace with your LinkedIn profile link
+          href="   https://wa.me/qr/TV7XDRZM2SIYO1 " 
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -120,9 +120,15 @@ function Contact() {
           </Button>
         </a>
 
-        <Button variant="outlined" className="flex items-center gap-3">
-          linkdin
-        </Button>
+        <a
+          href=" https://www.linkedin.com/in/amal-k-26159a20a/" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="outlined" className="flex items-center gap-3">
+       Linkdin
+          </Button>
+        </a>
       </Breadcrumbs>
     </div>
   );

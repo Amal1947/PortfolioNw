@@ -234,7 +234,7 @@ function App() {
               </div>
               <div className="mt-1">
                 <a
-                  href="https://www.linkedin.com/in/shahna-p-aba5a92858"
+                  href="https://www.linkedin.com/in/amal-k-26159a20a/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
