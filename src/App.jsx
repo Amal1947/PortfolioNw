@@ -71,7 +71,7 @@ function App() {
                 <div>
                   {" "}
                   <a
-                    href="https://www.linkedin.com/in/your-profile" // Replace with your LinkedIn profile link
+                    href="https://www.linkedin.com/in/amal-k-26159a20a/" 
                     target="_blank"
                     rel="noopener noreferrer"
                   >
